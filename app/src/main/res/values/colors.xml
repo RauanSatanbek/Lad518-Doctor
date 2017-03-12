@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e7f0f6</color>
+    <color name="colorPrimaryDark">#222</color>
+    <color name="colorAccent">#9472B6</color>
+    <color name="white">#fff</color>
+    <color name="textColorGray">#686868</color>
+    <color name="textColorYellow">#FEB441</color>
+    <color name="textColor">#4E1686</color>
+    <color name="btnMoneyBC">#9472B6</color>
+    <color name="btnMoneyTC">#fff</color>
+    <color name="tvProBC">#fff</color>
+    <color name="tvProBorderC">#aaa</color>
+    <color name="tvProTC">#c6c6c6</color>
+    <color name="gradientStartColor">#f2ddc0</color>
+    <color name="gradientEndColor">#d5afdc</color>
+    <color name="BgColorGradientStartColor">#5896C0</color>
+    <color name="BgColorGradientEndColor">#611FA3</color>
+
+</resources>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/cv_mb"
+    android:background="@drawable/radius">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:id="@+id/rl1"
+            android:background="@drawable/gradient">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/procedures_hover"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:text="@string/procedures_hover_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:id="@+id/imageViewText" />
+
+            <TextView
+                android:text="16 декабря\n09:30 - 10:30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginBottom="4dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/dateFromUser"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="8dp"
+            android:id="@+id/rl2">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/header">
+
+                <TextView
+                    android:text="Здесь"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/procedure"
+                    android:textSize="20sp"
+                    android:layout_weight="15"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/textColor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16\nотзывов"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:id="@+id/answers_count"
+                    android:textColor="@color/textColor"/>
+            </LinearLayout>
+            <com.example.rauansatanbek.lab518_task1.RowLayout
+                android:verticalSpacing="3dp"
+                android:horizontalSpacing="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/specialities">
+
+            </com.example.rauansatanbek.lab518_task1.RowLayout>
+
+
+            <!--tv_money-->
+            <TextView
+                android:text="2500 тг"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/specialities"
+                android:id="@+id/tv_price"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price"
+                android:id="@+id/ll_info">
+                <TextView
+                    android:text="Каждый веб знает, что такое текст"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/districts"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+                <!--Button-->
+                <TextView
+                    android:text="2500 тг"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/btn_price"
+                    android:textColor="@color/btnMoneyTC"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:alpha=".5"
+                    android:id="@+id/btn_price"/>
+                <!--waiting-->
+                <TextView
+                    android:text="Ожидает\nответа"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/waiting"
+                    android:visibility="gone"
+                    android:layout_below="@+id/professions"
+                    android:textSize="16sp"/>
+                <!--write_message-->
+                <TextView
+                    android:text="Написать"
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/btn_price"
+                    android:textColor="@color/btnMoneyTC"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:alpha=".5"
+                    android:visibility="gone"
+                    android:id="@+id/write_message"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_info"
+                android:id="@+id/rl_time"
+                android:visibility="gone">
+
+                <TextView
+                    android:text="Время приема:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/textColorGray"
+                    android:id="@+id/textView6"/>
+
+
+                <EditText
+                    android:paddingLeft="8dp"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/doctorFromTime"
+                    android:background="@drawable/et_shape"
+                    android:layout_below="@+id/textView6"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:text=" : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:id="@+id/textView5"
+                    android:paddingTop="-5dp"
+                    android:textSize="18dp"
+                    android:layout_toRightOf="@id/doctorFromTime"
+                    android:layout_below="@+id/textView6"/>
+
+
+                <EditText
+                    android:paddingLeft="8dp"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/doctorToTime"
+                    android:layout_below="@+id/textView6"
+                    android:layout_toRightOf="@id/textView5"
+                    android:background="@drawable/et_shape"
+                    android:focusable="false"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:text="От:"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:gravity="center"
+                    android:layout_below="@+id/doctorFromTime"/>
+
+                <TextView
+                    android:text="До:"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/doctorToTime"
+                    android:layout_toRightOf="@+id/textView5"
+                    android:gravity="center"
+                    android:id="@+id/textView3" />
+                <!--respond-->
+                <TextView
+                    android:text="Отозваться"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:id="@+id/respond"
+                    android:gravity="center"
+                    android:layout_alignBottom="@+id/doctorToTime"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/btn_not_active"
+                    android:textColor="@color/white"
+                    android:clickable="false"
+                    android:linksClickable="false"
+                    android:alpha=".5"/>
+            </RelativeLayout>
+            <!--<Button-->
+                <!--android:text="2500тг"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:padding="0dp"-->
+                <!--android:background="@drawable/btn_price"-->
+                <!--android:textColor="@color/btnMoneyTC"-->
+                <!--android:id="@+id/button3"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true" />-->
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
